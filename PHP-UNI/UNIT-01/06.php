@@ -5,6 +5,8 @@
 	echo $arr["name"][0]."<br>";
 	echo $arr["name"][1]."<br>";
 	echo $arr["name"][2]."<br>";
+	echo "<pre>";
+	print_r($arr);//human readable language printing statment
 	/*foreach($arr as $key=>$val)
 	{
 		echo "<br>[".$key."]=".$val;

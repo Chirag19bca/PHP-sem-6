@@ -1,3 +1,3 @@
 <?php
-echo "Learning PHP";
+ echo "Learning PHP";
 ?>
