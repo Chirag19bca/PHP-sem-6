@@ -3,7 +3,7 @@ $host="localhost";
 $user="root";
 $pass="";
 $db="db5012";
-$con=mysqli_connect($host,$user,$pass);
+$con=mysqli_connect($host,$user,$pass,$db);
 if($con)
 {
 	echo "Connnection Established<br>";
