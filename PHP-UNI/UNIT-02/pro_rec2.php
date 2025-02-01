@@ -14,7 +14,7 @@ if (!empty($_POST["search_product"])) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>u2p5</title>
+	<title>pro_rec2</title>
 </head>
 
 <body>
@@ -57,6 +57,8 @@ if (!empty($_POST["search_product"])) {
 				<th>Product Name</th>
 				<th>Product Price</th>
 				<th>Product Quantity</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
 			</tr>
 			
 			<?php
@@ -69,7 +71,11 @@ if (!empty($_POST["search_product"])) {
 						<td><?php echo $row["Pro_name"];?></td>
 						<td><?php echo $row["Pro_price"];?></td>
 						<td><?php echo $row["QOH"];?></td>
+                                                <td><?php echo"<a href=06.php?pid=$row[Pro_Id] style=text-decoration:none>Edit</a>"?></td>
+                                                <td><?php echo"<a href=07.php?pid=$row[Pro_Id] style=text-decoration:none>Delete</a>"?></td>
+
 					</tr>
+                                        
 			<?php
 				}
 			?>
