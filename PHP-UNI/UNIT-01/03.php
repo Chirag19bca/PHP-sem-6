@@ -3,13 +3,25 @@ $age=$_POST["age"];
 $gender=$_POST["gender"];
 if($age>18)
 {
-	if($gender=="male")
+	// if($gender == "male")
+	// {
+		// echo "You are aligible for vote and you are male  candidate";
+	// }
+	// else
+	// {
+		// echo "You are aligible for vote and you are female  candidate";
+	// }
+	switch($gender)
 	{
-		echo "You are aligible for vote and you are male  candidate";
-	}
-	else
-	{
-		echo "You are aligible for vote and you are female  candidate";
+		case 'male':
+			echo "You are aligible for vote and you are male  candidate";
+			break;
+		case 'female':
+			echo "You are aligible for vote and you are +female  candidate";
+			break;
+		default:
+			echo "not valid";
+			break;
 	}
 }
 else

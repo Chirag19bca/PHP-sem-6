@@ -2,7 +2,7 @@
 	$host="localhost";
 	$user="root";
 	$pass="";
-	$db="db5012";
+	$db="student";
 	$con=mysqli_connect($host,$user,$pass,$db);
 	if($con)
 	{

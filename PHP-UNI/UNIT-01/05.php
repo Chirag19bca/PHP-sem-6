@@ -1,4 +1,4 @@
-<?php
+ <?php
 	
 	$student=array("name"=>"chirag","age"=>22,"city"=>"ahemdabad","marks"=>99);
 	

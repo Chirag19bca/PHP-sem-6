@@ -2,6 +2,7 @@
     function myselect() 
     { 
         var pro = document.getElementById("pro").value;
+		alert(pro);
         var h = new XMLHttpRequest(); 
 		h.open("GET","04.php?Pro_id="+pro,true); 
 		h.onreadystatechange = function()
@@ -12,10 +13,11 @@
 			} 
 		} 
 		h.send(); 
+	
     } 
 </script>
 <?php
-	$con=mysqli_connect("localhost","root","","db5012");
+	$con=mysqli_connect("localhost","root","","student");
 	$query = "select * from product"; 
     $res = mysqli_query($con,$query) 
 
@@ -27,7 +29,7 @@
 	while($fetch = mysqli_fetch_array($res)) 
     { 
 ?>
-		<option><?php echo $fetch['Pro_name']; ?>,<?php echo $fetch['Pro_price']; ?>,<?php echo $fetch['QOH']; ?></option>
+		<option value=<?php echo $fetch['Pro_Id']; ?>><?php echo $fetch['Pro_name']; ?></option>
 <?php 
     } 
 ?>

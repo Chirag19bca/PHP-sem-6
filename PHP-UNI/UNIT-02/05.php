@@ -77,5 +77,4 @@ if (!empty($_POST["search_product"])) {
 		</table>
 	</div>
 </body>
-
 </html>

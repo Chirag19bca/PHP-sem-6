@@ -18,4 +18,3 @@
 Name: <input type="text" id="name" onKeyUp="myname()">
 <div id="d1"></div>
 </form>
-
